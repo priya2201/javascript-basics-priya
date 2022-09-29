@@ -1,0 +1,26 @@
+// let x=[];
+// console.log(typeof(x));
+// console.log(Array.isArray(x));
+
+// let y=["s","m","t"];
+// console.log(y.length);
+// console.log(y);
+// y.length=7;
+// console.log(y.length);
+// console.log(y);
+// console.log(y.sort());
+// let z=[1,10,100,2,3,40,20];
+// console.log(z.sort());
+
+flat depth
+let arr1=[1,2,3,[[4,5,6]]];
+
+    let arr2=arr1.flat();
+    console.log(arr2);           // [1,2,3,[4,5]]
+
+    let arr3=arr1.flat(2);
+    console.log(arr3); 
+    let arr4=arr1.flat(1);
+    console.log(arr4); 
+
+

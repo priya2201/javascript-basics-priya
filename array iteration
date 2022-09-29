@@ -1,0 +1,22 @@
+const numbers=[23,33,12,24,56];
+const numbers1=numbers.map(myfun1);
+
+let txt="";
+numbers.forEach(myfun);
+
+console.log(txt);
+
+function myfun(value,index,array){
+    txt+= " " +value;
+    txt+=" " + index;
+    txt+=" " + array+"\n";
+}
+console.log(numbers1);
+function myfun1(value,index,array){
+    return value*2;
+    
+}
+//map and foreach loop in array
+
+
+

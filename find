@@ -1,0 +1,14 @@
+let no=[1,2,3,4,1]; //primitive
+console.log(no.indexOf('1'));
+console.log(no.lastIndexOf(1));
+console.log(no.indexOf(3));
+console.log(no.indexOf('a'));
+console.log(no.indexOf());
+console.log(no.indexOf(1) !== -1);
+console.log(no.includes('1'));
+console.log(no.includes(1));
+console.log(no.indexOf(1,3));
+
+//findIndex
+const arr=[1,2,3,6,7,8,9,11].findIndex(i=> i>=5);
+console.log(arr);

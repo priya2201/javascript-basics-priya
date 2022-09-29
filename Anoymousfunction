@@ -1,0 +1,28 @@
+
+let oddoreven=function(num){
+    
+    if(num%2==0){
+        console.log("Even");
+    }
+    else
+    {
+       console.log("Odd");
+    }
+}
+oddoreven(6);
+
+let message=(function(){
+    let name='piaa';
+    console.log(name);
+})();
+
+
+let show = function() {
+    console.log('Anonymous function');
+};
+
+show();
+
+setTimeout(function() {
+    console.log('Execute later after 1 second')
+}, 1000);

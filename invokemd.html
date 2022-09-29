@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Javascript function invoaction as a method</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1" </p>
+            <p id="demo2" </p></p>
+        <script>
+            const obj1={
+                firstname:'pia',
+                lastname:'murpani',
+                age:20,
+                fullname:function(){
+                    return this.firstname + " " +this.lastname + " is "+ this.age + " years old."
+
+                }
+
+            }
+            document.getElementById("demo").innerHTML=obj1.fullname();
+
+
+
+        </script>
+         <script>
+            const obj2={
+                firstname:'pia',
+                lastname:'murpani',
+                age:20,
+                fullname:function(){
+                    return this;
+
+                }
+
+            }
+            document.getElementById("demo1").innerHTML=obj2.fullname();
+</script>
+<!-- now it's function constructor which will creates a object and returns a value-->
+<script>
+    function myfun(arg1,arg2){
+        this.firstname=arg1;
+        this.lastname=arg2;
+    }
+    const obj=new myfun("pia","nair");
+    document.getElementById("demo2").innerHTML=obj.firstname;
+
+</script>
+
+    </body>
+</html>
+        

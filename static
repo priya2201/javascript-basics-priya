@@ -1,0 +1,13 @@
+class person{
+    static display(){
+        return "static Invocation"
+    }
+    static display(){
+        return "static Invocation hmm"
+    }
+    static display1(){
+        return "static Invocation again"
+    }
+}
+console.log(person.display());
+console.log(person.display1());

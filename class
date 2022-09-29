@@ -1,0 +1,41 @@
+class car{
+    constructor(name,speed,year){
+        this.name=name;
+        this.speed=speed;
+        this.year=year;
+    }
+
+age(){
+    let date=new Date();
+    return date.getFullYear()-this.year
+}
+}
+let car1=new car("maruti",70,2021);
+console.log(car1.name + "'s" + " speed is " + car1.speed+" model is of " + car1.year + " is " +car1.age() +" years old.");
+console.log(`${car1.name} 's speed is ${car1.speed} and model is of ${car1.year}  and car's age is ${car1.age()} years old.`)
+// you can also send parameters to class methods
+class bike{
+  constructor(name,model,year,time)
+  {
+    this.name=name;
+    this.model=model;
+    this.year=year;
+    this.time=time;
+  }
+  Time(x){
+    return x;
+  }
+}
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+const d=new Date();
+let time=d.getTime();
+let years = Math.round(d.getTime() / year);
+
+
+let bike1=new bike('activa' ,'a22',2021,'03:00 pm');
+console.log(bike1.name + " " + bike1.model + " " + bike1.year + " " + bike1.time + bike1.Time(years) );
+

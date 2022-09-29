@@ -1,0 +1,25 @@
+// let authentication=true;
+// let nextURL= authentication?(alert('you can see the page'),'/javascript-ternary-operator/'):
+// (alert('access denied'),'/403');
+// console.log(nextURL);
+
+let authenticated = true;
+// let nextURL = authenticated
+//   ? (alert('You will redirect to admin area'), '/admin')
+//   : (alert('Access denied'), '/403');
+// HTMLFormControlsCollection.log(nextURL);
+
+
+let speed=60
+;
+let message=(speed>115 &&speed<=120)?'too fast': (speed<120 && speed>=85)?'fast':(speed<=84 && speed>60)?'okay but slow that speed too': 'ok';
+console.log(message);
+
+let code=2;
+let msg=code !=1?'suceess':'fail';
+console.log(msg);
+
+let code1=2;
+let msg1;
+code1 !=2?(msg1='suceess'):(msg1='fail');
+console.log(msg1);

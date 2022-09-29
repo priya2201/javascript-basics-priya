@@ -1,0 +1,24 @@
+let age=18; // if else ladder
+if(age>=18){
+    console.log("you can drive");
+}
+else{
+    console.log("you can't drive now");
+}
+//using multiple if  else but avoid multiple if and use instead  logical operators
+let dlicense=true;
+if(age>=18){
+    if(dlicense=false){
+        console.log("you now can drive ");
+    }
+    else{
+        console.log("you can't drive now your age must be 18 atleast");
+    }
+}
+//use logical operators instead of nesting if 
+if((age>=18) && (dlicense=true)){
+    console.log("drive carefully dude");
+}
+else{
+    console.log("wait dude you're age must be 18 atleast and license is also must")
+}

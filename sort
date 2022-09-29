@@ -1,0 +1,39 @@
+//sorting an array
+const arr1=[3,2,1,4,5];
+console.log(arr1.sort());
+console.log(arr1.reverse());
+
+
+// const courses=[
+//     {id:1,name:'js'},
+//     {id:2,name:'node'},
+//     {id:4,name:'angular'}
+// ];
+// courses.sort(function(a,b,c){
+//     const nameA=a.name.toUpperCase();
+//     const nameB=b.name.toUpperCase();
+//     const nameC=c.name.toUpperCase();
+
+//     if(nameA<nameB && nameC<nameA)return 1;
+//     if(nameB<nameC && nameA<nameC) return -1;
+//     else return 0;
+// });
+// console.log(courses);
+
+const courses=[
+        {id:1,name:'js'},
+        {id:2,name:'node'}
+        
+    ];
+    courses.sort(function(a,b){
+        const nameA=a.name.toUpperCase();
+        const nameB=b.name.toUpperCase();
+    
+    
+        if(nameA<nameB)return -1;
+        if(nameA>nameB)return 1;
+
+        else return 0;
+    });
+    console.log(courses);
+    

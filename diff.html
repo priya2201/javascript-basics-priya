@@ -1,0 +1,40 @@
+<!--//difference between arrow and normal function 
+//  hello  =  function(){ //pleasew do certain code of load and button in html
+//  return this;
+// }
+
+// console.log(hello());
+// window.addEventListener("load",hello);
+// window.addEventListener("load",hello);-->
+<html>
+    <head>
+        <title>
+            Javascript Regular function and normal function Difference
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button id="btn">Click Me!</button>
+        <p id="demo1"></p>
+        <button id="btn1">Click Me!</button>
+    <script>
+        
+        let hello='';
+        
+        hello=function(){
+            document.getElementById("demo").innerHTML += this;
+        }
+        window.addEventListener("load",hello);
+        document.getElementById("btn").addEventListener("click",hello);
+    </script>
+    <script>
+        let hello1='';
+        hello1=()=>{
+            document.getElementById("demo1").innerHTML += this;
+        }
+        window.addEventListener("load",hello1);
+        document.getElementById("btn1").addEventListener("click",hello1);
+    </script>
+        </body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <body>
+            <button onclick="myFunction1()">Sort Alphabetically</button>
+            <button onclick="myFunction2()">Sort Number</button>
+            <p id="demo"></p>
+            <script>
+                let array1=[1,2,3,56,78,100,200];
+                document.getElementById("demo").innerHTML=array1;
+                function myFunction1(){
+                    array1.sort();
+                    document.getElementById("demo").innerHTML=array1;
+                }   
+                function myFunction2(){
+                  array1.sort(function(a,b){
+                    return a-b;
+                
+                  });
+                 
+
+                
+                
+                document.getElementById("demo").innerHTML=array1;
+                }
+            </script>
+
+        </body>
+
+    </head>
+</html>

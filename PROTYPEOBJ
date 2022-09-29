@@ -1,0 +1,19 @@
+// adding a new method to the constructor fn
+function Student(fname,lname){
+    this.fname=fname;
+    this.lname=lname;
+}
+Student.prototype.company="dream flies"//adding a new property in constructor fn
+Student.prototype.fullname=function()
+{
+    return this.fname + " " + this.lname;
+}
+var st1=new Student("pia","murpani");
+var st2=new Student("tushar","Murpani");
+console.log(st1.fullname());
+console.log(st2.fullname());
+console.log(st1.company);
+console.log(st2.company);
+
+
+

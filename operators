@@ -1,0 +1,90 @@
+let x=300;
+let y=200;
+let z=200;
+
+
+console.log(x+y);
+console.log(x-y);
+console.log(x*y);
+console.log(x/y);
+console.log(x%y);
+console.log(x**y);
+console.log(x++);
+console.log(++x);
+console.log(x*=y);//x=302*200 ,x=60400
+console.log(x+=y);//x=60400+200=60600
+console.log(x-=y);
+console.log(y%=x);
+console.log(x<=y);
+console.log(x>=y);
+console.log(x==y);
+console.log(x=y);//x=200
+console.log(y===z);
+console.log('smile'==='smile');
+console.log(2==='2');
+console.log(2=='2');
+console.log(NaN==NaN);
+console.log(NaN!==NaN);
+console.log(typeof string);
+console.log(typeof number);
+console.log(typeof '1');
+console.log(typeof '');
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(typeof 1.30e21);
+
+let personbalance=20000;
+let applyingforcredit=personbalance>50000?"success":"didn't succeed";
+console.log(applyingforcredit);
+
+
+let meena=true;
+let heena=false;
+console.log(meena || heena);
+console.log(meena && heena);
+const result=console.log(!meena);
+console.log(result);
+
+let usercolor="blue"; //if we choose undefined then the selected color turns to red not blue
+let defaultcolor="red";
+console.log(usercolor || defaultcolor);
+console.log(usercolor && defaultcolor);
+console.log(false || 'pia');
+console.log(false ||'pia' || 1 || 2);
+console.log(true && 'pia');
+console.log(false && 'pia');
+
+//read ,write and execute permissions in bitwise operators
+
+const rprmson=4;
+const wprmson=2;
+const eprmson=1;
+
+let mprmson=0;
+mprmson= mprmson | rprmson | eprmson;
+console.log(mprmson);
+let message=(mprmson & eprmson)? 'Yes' : "No";
+console.log(message);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

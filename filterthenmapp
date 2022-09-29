@@ -1,0 +1,7 @@
+const arr1=[1,2,3];
+const filters=arr1.filter(n=> n>=0);
+console.log(filters);
+const mapp=filters.map(n=>'<li>' + n + '</li>');
+const joiny='<ul>'+mapp.join('')+ '</ul>';
+console.log(mapp);
+console.log(joiny);

@@ -1,0 +1,21 @@
+class emp{
+    setempdetails(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    getempid(){
+        return this.id;
+    }
+    getempname(){
+        return this.name;
+    }
+    getempsalary(){
+        return this.salary
+    }
+}
+var e=new emp();
+e.setempdetails(202,'piyu',2000000);
+console.log(e.getempid());
+console.log(e.getempname());
+console.log(e.getempsalary());

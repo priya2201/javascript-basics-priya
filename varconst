@@ -1,0 +1,42 @@
+// var cars=["Volvo","BMW","Toyota"];//allowed
+// console.log(cars);
+// var cars=["Volvo","BMW","Toyota"];//allowed
+// console.log(cars);
+// cars=["Volvo","BMW","Toyota"];//allowed
+// console.log(cars);
+
+// var cars=["Volvo","BMW","Toyota"];
+// console.log(cars);
+//const cars=["Volvo","BMW","Toyota"];
+//console.log(cars);//error it's already declared or assign 
+// {
+//     var cars=["Volvo","BMW","Toyota"];
+//     console.log(cars);//allowed
+// const cars=["Volvo","BMW","Toyota"];
+// console.log(cars);//not allowed
+// }
+//redeclaring and reassigning an existing const array in same scope or in another scope is not allowed
+// const cars = ["Volvo", "BMW"];   // Allowed
+// const cars = ["Volvo", "BMW"];   // Not allowed
+// var cars = ["Volvo", "BMW"];     // Not allowed
+// cars = ["Volvo", "BMW"];         // Not allowed
+
+// {
+//   const cars = ["Volvo", "BMW"]; // Allowed
+//   const cars = ["Volvo", "BMW"]; // Not allowed
+//   var cars = ["Volvo", "BMW"];   // Not allowed
+//   cars = ["Volvo", "BMW"];       // Not allowed
+// }
+const cars = ["Volvo", "BMW"];   // Allowed
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+var company = {
+    Name: "GeeksforGeeks", 
+    Address: "Noida", 
+    Contact: "+919876543210",
+    Email: "abc@geeksforgeeks.org"
+};
+  
+// Display the object information
+console.log("Information of variable company:", company);
+       
+// Display the type of variable
+console.log("Type of variable company:", typeof company);
+
+
+//function
+function multiply(a,b){
+    return a * b
+}
+
+
+var x=2;
+var y=5;
+console.log('multiply of x and y is :' + x+ '*' + y + '=',multiply(x,y));
+let res=multiply((a,b) => a*b);
+console.log(res);
+multiply(2,5);

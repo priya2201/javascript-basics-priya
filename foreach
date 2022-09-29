@@ -1,0 +1,17 @@
+//for-in loop
+ let days=["sun","mon","tues","wed","thurs","fri","sat"]; 
+    
+    for( let i in days){
+        console.log(i);            // index of element
+        console.log(days[i]);      // element
+    }
+//for-of loop
+    let days1=["sun","mon","tues","wed","thurs","fri","sat"]; 
+    
+    for( let i of days1){
+        console.log(i);            // element
+    }
+    //for each loop
+    let days3=["sun","mon","tues","wed","thurs","fri","sat"]; 
+
+days3.forEach(function(i,j){console.log(i,j)});

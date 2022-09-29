@@ -1,0 +1,21 @@
+//testing the positive and negative elemts in an arary with every and some
+
+const arr1=[1,2,2,5,7];
+
+const allpositive=arr1.every(function(value){
+    return value>=0
+});
+console.log(allpositive);
+
+const arr2=[1,2,2,5,-1,7];
+
+let atleastone= arr2.some(function(element){
+    return element>=0
+});
+let at1= arr2.every(function(element){
+    return element>=0
+});
+
+
+console.log(atleastone);
+console.log(at1);

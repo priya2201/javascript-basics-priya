@@ -1,0 +1,45 @@
+class std{
+    constructor(){
+        var name;
+        var marks;
+        var cls;
+    }
+    getstdname(){
+        return this.name;
+    }
+    setstdname(name){
+        this.name=name;
+
+    }
+    getstdmarks(){
+        return this.marks;
+    }
+    setstdmarks(marks){
+        if(marks<0 || marks>100)
+        {
+            console.log("invalid marks");
+        }
+        else{
+            this.marks=marks;
+        }
+    }
+    getstdcls(){
+        return this.cls;
+    }
+    setstdclass(cls){
+        if(cls<0 || cls>12)
+        {
+            console.log("Invalid class");
+        }
+        else{
+            this.cls=cls;
+        }
+    }
+
+}
+var e=new std();
+e.setstdname("piyu");
+e.setstdmarks(90);//displaying alert
+e.setstdclass(11);//displaying alert
+
+console.log(e.getstdname() + " " + e.getstdmarks() + " " + e.getstdcls() );

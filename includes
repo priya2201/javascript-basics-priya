@@ -1,0 +1,32 @@
+const nos=[1,2,3,4];
+
+
+// function show(arr,searchElement){
+//     for(let element of arr)
+//     if(element === searchElement)
+//     return true;
+//     return false;
+
+//  }
+
+//  console.log(show(nos,4))
+
+
+ const arr1=[1,2,4,56,78];
+
+ function show1(array,searchElement){
+ for(let n of array){
+  if(n%2==0 && n==searchElement){
+    console.log("no is divisble by 2");}
+   else{
+         console.log("No is not there and it's not divisible by 2");
+   }}
+}
+
+console.log(show1(arr1,4));
+
+
+
+
+
+

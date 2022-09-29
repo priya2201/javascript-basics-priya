@@ -1,0 +1,14 @@
+const obj1={
+    firstname:'piyu',
+    lastname:'mn',
+    fullname:function(){
+        return this.firstname + " " + this.lastname;
+    }
+}
+const obj2={
+    firstname:'vini',
+    lastname:'nr'
+}
+let fullnames = obj1.fullname.bind(obj2);
+
+console.log(fullnames());

@@ -1,0 +1,22 @@
+//invoke  a static method within constructor
+class test{
+    constructor(){
+        console.log(test.display() + "\n");
+        console.log(this.constructor.display());
+    }
+    static display(){
+        return " static method invocation"
+    }
+}
+var t=new test;
+
+class test1{
+    static display(){
+        return "helooo"
+    }
+    show(){
+        console.log(test1.display())
+    }
+}
+var t =new test1;
+t.show();

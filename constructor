@@ -1,0 +1,26 @@
+class Employee{ //simple constructor method
+    constructor(){
+        this.id=101;
+        this.salary=20000;
+        this.name="pia";
+    }
+}
+var emp=new Employee();
+console.log(emp.id+" "+emp.name+" "+emp.salary);
+
+class company{
+    constructor(){
+        this.company="Dreamy Flies";
+    }
+}
+class employee extends company{
+    
+    constructor(id,name){
+        super();
+        this.id=id;
+        this.name=name;
+
+    }
+}
+var emp1=new employee(1,'jai');
+console.log(emp1.id + " "+ emp1.name + " " + emp1.company);

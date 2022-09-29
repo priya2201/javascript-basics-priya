@@ -1,0 +1,5 @@
+let days=['s','m','tu','w','th','fri','sat'];
+for(let i in days){
+    document.querySelector("select").innerHTML+=`<option> ${days[i]} </option>`;
+    
+}

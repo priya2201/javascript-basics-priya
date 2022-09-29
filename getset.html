@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Javascript Attributes</title>
+    </head>
+    <body>
+        <p id ="demo"></p>
+        <p id ="demo1"></p>
+    
+    <script>
+        let car={
+            name:'bmw',
+            model:25,
+            fuel:'petrol',
+       get fuel_type(){
+        return this.fuel;
+       }
+        };
+        document.getElementById("demo").innerHTML=car.fuel_type;
+
+
+      </script>
+      <script>
+        let car1={
+            name:'bmw',
+            model:25,
+            fuel_type:'',
+       set fuel(fuel){
+        this.fuel_type=fuel;
+       }
+        };
+        car1.fuel='diesel'
+        document.getElementById("demo1").innerHTML=car1.fuel_type;
+
+
+      </script>
+      </body> 
+</html>

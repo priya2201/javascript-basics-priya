@@ -1,0 +1,36 @@
+//pass by value
+let x=5;
+let y=x;
+
+console.log(x);
+console.log(y);
+
+//pass by refernce in object 
+ const obj1={
+    name:'pia',
+    age:12,
+    occupation:"nodejs developer"
+ };
+ const obj2=obj1;
+ obj2.age=17;
+ obj2.occupation="angular Developer";
+
+ console.log(obj1);
+ console.log(obj2);
+
+
+ //pass by reference in array 
+ const arr1=[10,20,30];
+ const arr2=arr1;
+
+ arr2.push(40);
+ console.log(arr1);
+ console.log(arr2);
+
+ //pass by reference in array  but now it will not change reference of 1st array by using concat method
+ const arr3=[10,20,30];
+ const arr4=[].concat(arr3);
+
+ arr4.push(40);
+ console.log(arr3);
+ console.log(arr4);

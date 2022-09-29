@@ -1,0 +1,13 @@
+const arr1=[1,2,56,34,-9,89,-5,-76,43,-9,0];
+const filters= arr1.filter(n => n>=0);
+console.log(filters);
+const sorts=filters.sort();
+
+console.log(sorts);
+//filtering of days
+let days=["sun","mon","tue","wed","thurs","fri","satur"];
+let f=days.filter(d=> d.length>=4);
+console.log(f);
+
+const r=[1,2,4,6,8,2,3,34,56,77,89,09].filter(i=>i%2==0);
+console.log(r);

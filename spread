@@ -1,0 +1,31 @@
+let fruits=['apple','banana','orange'];
+let vegetables=['tomato','potato','onion'];
+let merged=[...fruits,...vegetables];
+vegetables.push('cucumber');
+let cc=[...fruits.concat(...vegetables)];
+console.log(merged);
+console.log(cc);
+
+//coloredCircle object that has all properties of the circle object and an additional property color:radius:
+const circle={
+    radius:12.0,
+    diameter:24.0
+
+};
+console.log(circle);
+
+const coloredCircle={
+    ...circle,
+    color:'black'
+};
+console.log(coloredCircle);
+const borderstyle={
+    style:'hash'
+};
+const borderColor={
+    ...coloredCircle,
+    border:2,
+    ...borderstyle
+};
+
+console.log(borderColor);

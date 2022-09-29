@@ -1,0 +1,9 @@
+//iterating an array
+let arr1=[1,2,3];
+for(let number of arr1)
+    return number;
+
+
+
+  arr1.forEach((number,index)=>console.log(index,number))  ;
+

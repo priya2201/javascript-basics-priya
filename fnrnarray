@@ -1,0 +1,32 @@
+function compareBy(propertyName) {
+    return function (a, b) {
+      let x = a[propertyName],
+        y = b[propertyName];
+  
+      if (x > y) {
+        return 1;
+      } else if (x < y) {
+        return -1;
+      } else {
+        return 0;
+      }
+    };
+  }
+  //compareBy function return array
+
+let fruits=[
+    {Name:'banana',Price:30,Isactive:true},
+    {Name:'apple',Price:50,Isactive:false},
+    {Name:'Strawberry',Price:100,Isactive:false},
+    {Name:'mango',Price:90,Isactive:false}
+];
+//fruits sorted by name
+console.log("fruits sorted by name");
+fruits.sort(compareBy('Name'));
+console.table(fruits);
+console.log("fruits sorted by price");
+fruits.sort(compareBy('Price'));
+console.table(fruits);
+console.log("fruits sorted by isactive");
+fruits.sort(compareBy('Isactive'));
+console.table(fruits);

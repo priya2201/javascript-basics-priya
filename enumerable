@@ -1,0 +1,22 @@
+var info={
+    name:'pia',
+    age:12,
+    address:'kailash parbat',
+    email:'xyz@gmail.com'
+}
+var result=Object.getOwnPropertyDescriptor(info,'name');
+var result1=Object.getOwnPropertyDescriptor(info,'address');
+var result2=Object.getOwnPropertyDescriptor(info,'email');
+console.log(result);
+console.log(result1);
+console.log(result2);
+
+console.log(info);
+Object.defineProperty(info,'name',{
+    value:'now shivam change',
+    configurable:true,
+    writable:false,
+    enumerable:false
+});
+var result4=Object.keys(info);
+console.log(result4);

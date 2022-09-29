@@ -1,0 +1,16 @@
+let person1={
+    name:'pia',
+    age:21,
+};
+(function(){
+    console.log(person1.name+' '+person1.age);
+})(person1);
+
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+(function () {
+    console.log(person.firstName + ' ' +  ' ' +person.lastName);
+})(person);

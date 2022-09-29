@@ -1,0 +1,26 @@
+//const output=add(4,5); //Named function
+//console.log(output);
+ function add(a, b)
+  {   return a + b;
+  }
+
+
+let sum = add;
+console.log(sum);
+
+function average(a,b,fn){
+    return fn(a,b)/2;
+}
+let result = average(10, 40, sum);
+console.log(result);
+
+function multiply(a,b){
+  return a*b;
+}
+let mul=multiply;
+console.log(mul);
+function avg(a,b,fnn){
+  return fnn(a,b)/2;
+}
+let res=avg(50,20,mul);
+console.log(res);

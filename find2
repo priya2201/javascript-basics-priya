@@ -1,0 +1,19 @@
+let course=[
+    {id:1,name:'a'},
+    {id:2,name:'b'},
+
+];
+console.log(course.includes({id:1,name:'a'}));
+
+//find method
+var found=course.find(function(course){
+    return course.name === 'a';
+
+});
+console.log(found);
+var found2=course.find(course => course.name==='b');
+    console.log(found2);
+
+    var res=[12,14,23,45,67];
+     var finding=res.find(elements => elements>30);
+     console.log(finding);

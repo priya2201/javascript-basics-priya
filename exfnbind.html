@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Explicit function binding</title>
+    </head>
+    <body>
+        <p id="dem0"></p>
+    <script>
+        const obj2={
+            fullname:function(){
+                return this.firstname + " " + this.lastname;
+            }
+        }
+        const obj1={
+            firstname:'vini',
+            lastname:'nair'
+        }
+let x=obj2.fullname.call(obj1);
+document.getElementById("demo").innerHTML=x;
+    </script>
+    </body>
+
+    </html>

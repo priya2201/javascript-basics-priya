@@ -1,0 +1,49 @@
+//javascript object having properties and their methods ,properties define the key-value pairs.the characteristics of properties of objects via internal attributes surrounded by 2 pair of square brackets[[Enumerable]]
+//deleting properties of object
+let person={
+    name:'pia',
+    lastname:'mn',
+    number:'9090909088',
+    code:'221-210',
+    ssn:'9909090'
+};
+person.age=20;
+console.log(person);
+delete person.age;
+console.log(person);
+console.log(person.age);
+
+//change the configurable to false and see the effect
+'use strict';
+Object.defineProperty(person,'code',{
+    configurable:true,
+    value:'012-223',
+    enumerable:true,
+    writable:true
+});
+console.log(person.code);
+console.log(person);
+Object.defineProperty(person,'number',{
+    configurable:false,
+    writable:false,
+    number:'9090909011'
+});
+delete person.number;
+console.log(person.number);
+console.log(person);
+
+'use strict';
+Object.defineProperty(person, 'ssn', {
+    configurable: false,
+    value: '012-38-9119',
+    writable:false,
+    enumerable:false
+});
+delete person.ssn;
+console.log(person.ssn);
+console.log(person);
+
+
+
+
+

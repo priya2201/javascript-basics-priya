@@ -1,0 +1,18 @@
+let weight=110;//km
+let height=1.75;//m
+let weightStatus="";
+let bmi=weight/(height*height);
+if(bmi<=18){
+    console.log(weightStatus+"underweight");
+}
+else if(bmi>19 && bmi<=26)
+{
+    console.log(weightStatus+"Healthy weight");
+}
+else if(bmi>27 && bmi<=30)
+{
+    console.log(weightStatus+"overweight");
+}
+else{
+    console.log(weightStatus+"obessity");
+}
