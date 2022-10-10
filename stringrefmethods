@@ -1,0 +1,15 @@
+//valueOf()-return a primitive value of a string it does not change the origibnal array it doen't have parameters.
+//and it used to be a convert a string object into a string
+let var1=(function three_sum(num) {
+    return num[0] + num[1] + num[2]})
+console.log(var1);
+ //three_sum(22,33,45);
+
+//valueOf() and tostring() is simialr to return a string object into strung
+//string.trimStart(); --ecmascript 2019
+//trimEnd() --ecmascript 2019
+
+let text="    Hello World!     ";
+let result=text.replace(/^\s+|\s+$/gm,'');
+console.log(result);
+//trim -es5(js 2009)

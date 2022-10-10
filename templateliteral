@@ -1,0 +1,15 @@
+let price=10;
+let VAT=0.25;
+console.log(`Total: ${(price * (1+VAT)).toFixed(3)}`);
+
+
+let header="Template Literals";
+let tags=["Template Litrals","Javascript","es6"];
+
+let html=`<h2> ${header} </h2> <ul>`;
+
+for(let x of tags){
+    html+=`<li>${x}</li>`;
+}
+html+=`</ul>`;
+console.log(html);

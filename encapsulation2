@@ -39,7 +39,7 @@ class std{
 }
 var e=new std();
 e.setstdname("piyu");
-e.setstdmarks(90);//displaying alert
-e.setstdclass(11);//displaying alert
+e.setstdmarks(110);//displaying alert
+e.setstdclass(13);//displaying alert
 
 console.log(e.getstdname() + " " + e.getstdmarks() + " " + e.getstdcls() );

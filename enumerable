@@ -14,6 +14,7 @@ console.log(result2);
 console.log(info);
 Object.defineProperty(info,'name',{
     value:'now shivam change',
+    
     configurable:true,
     writable:false,
     enumerable:false

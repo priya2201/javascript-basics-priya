@@ -1,0 +1,13 @@
+let x=[];
+console.log(typeof(x));
+console.log(Array.isArray(x));
+
+let y=["s","m","t"];
+console.log(y.length);
+console.log(y);
+y.length=7;
+console.log(y.length);
+console.log(y);
+console.log(y.sort());
+let z=[1,10,100,2,3,40,20];
+console.log(z.sort());

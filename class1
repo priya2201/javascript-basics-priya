@@ -1,0 +1,15 @@
+class car{
+    constructor(name,speed,year){
+        this.name=name;
+        this.speed=speed;
+        this.year=year;
+    }
+
+age(){
+    let date=new Date();
+    return date.getFullYear()-this.year
+}
+}
+let car1=new car("maruti",70,2021);
+console.log(car1.name + "'s" + " speed is " + car1.speed+" model is of " + car1.year + " is " +car1.age() +" years old.");
+console.log(`${car1.name} 's speed is ${car1.speed} and model is of ${car1.year}  and car's age is ${car1.age()} years old.`)

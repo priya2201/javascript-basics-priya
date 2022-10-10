@@ -1,0 +1,2 @@
+//indexOf -> return the index of the first string and when the second parameter is there it's for the position where it starts  but it chooses the last string in the sentence
+//lastIndexOf -> returns the index of the last srring and when the second parameter is there it's for the position where it starts but it chooses the first string in the sentence

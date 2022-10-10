@@ -1,4 +1,4 @@
-class Employee{ //simple constructor method
+class Employee{    
     constructor(){
         this.id=101;
         this.salary=20000;

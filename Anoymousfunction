@@ -1,5 +1,5 @@
 
-let oddoreven=function(num){
+let oddoreven=function(num){ 
     
     if(num%2==0){
         console.log("Even");

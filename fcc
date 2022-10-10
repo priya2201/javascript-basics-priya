@@ -1,5 +1,5 @@
-//const output=add(4,5); //Named function
-//console.log(output);
+// const output=add(4,5); //Named function
+// console.log(output);
  function add(a, b)
   {   return a + b;
   }

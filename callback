@@ -1,0 +1,11 @@
+function showTime(x,done){    
+        console.log(" Show Time is at ", x);
+        done();
+    }
+    
+    function showEnd(){
+        console.log("Show Ends")
+    }
+    showTime(9,showEnd);
+    
+    console.log("done");

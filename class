@@ -10,7 +10,7 @@ age(){
     return date.getFullYear()-this.year
 }
 }
-let car1=new car("maruti",70,2021);
+let car1=new car("maruti",70,2017);
 console.log(car1.name + "'s" + " speed is " + car1.speed+" model is of " + car1.year + " is " +car1.age() +" years old.");
 console.log(`${car1.name} 's speed is ${car1.speed} and model is of ${car1.year}  and car's age is ${car1.age()} years old.`)
 // you can also send parameters to class methods
@@ -22,7 +22,7 @@ class bike{
     this.year=year;
     this.time=time;
   }
-  Time(x){
+  age(x){
     return x;
   }
 }
@@ -32,10 +32,10 @@ const day = hour * 24;
 const year = day * 365;
 
 const d=new Date();
-let time=d.getTime();
-let years = Math.round(d.getTime() / year);
+return d.getFullYear() - this.year
+
 
 
 let bike1=new bike('activa' ,'a22',2021,'03:00 pm');
-console.log(bike1.name + " " + bike1.model + " " + bike1.year + " " + bike1.time + bike1.Time(years) );
+console.log(bike1.name + " " + bike1.model + " " + bike1.year + " " + bike1.time + bike1.Time(d));
 
