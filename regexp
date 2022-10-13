@@ -1,0 +1,30 @@
+// regular expression is a sequence of characters.that forms a search pattern 
+//serach pattern can be used for text search and text replace operations.
+//  /w3schools/i;
+//  /pattern/modifiers
+
+let text="Hello world";
+console.log(text.search(/World/i));
+console.log(text.replace(/World/i,'pia'));
+let text1="\nIs th\nis it?";
+let result=text.match(/^is/m);
+console.log(result);
+
+//regular expression modifiers
+// /i-performd case insensitive
+// /g- performs global check of match in a string
+// /m-performs multiline matching
+
+//regular expression patterns
+let p="is there is like this always whyy 1123456667890?";
+console.log(p.match(/[i]/g));
+console.log(p.match(/[0-5]/g));
+let text2 = "re, green, red, green, gren, gr, blue, yellow";
+console.log(text2.match(/(red|green)/g));
+
+for(var x=0;x<=5;x++){
+   setTimeout(()=>{console.log(x)
+},2000);
+}
+const obj=/e/.exec("the best things in life are free");
+console.log("found " + obj[0] + " in position " + obj.index + " in the text " + obj.input);
