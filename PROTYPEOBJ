@@ -16,4 +16,20 @@ console.log(st1.company);
 console.log(st2.company);
 
 
+function Class(division,floor){
+    this.division=division;
+    this.floor=floor;
+
+}
+
+Class.prototype.teacher="Siya ";
+Class.prototype.info=function(){
+    return this.division + " " + this.floor
+}
+var st=new Class("d","4th");
+console.log(st);
+console.log(st.info());
+console.log(st.teacher);
+
+
 

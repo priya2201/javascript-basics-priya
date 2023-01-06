@@ -34,3 +34,7 @@ console.log(y);
  arr4.push(40);
  console.log(arr3);
  console.log(arr4);
+ const arr5=[...arr3];
+ arr5.push(50);
+ console.log(arr3);
+ console.log(arr5);

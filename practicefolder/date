@@ -1,0 +1,31 @@
+const now=new Date();
+console.log(now);
+console.log(now.getUTCHours());
+
+let now1=now.getTime();
+console.log(now1)
+const epochTime=new Date(0);
+console.log(epochTime);
+
+//initalize a birthday instance 
+const bday=new Date(2001,8,22);
+console.log(bday.getFullYear());
+console.log(bday.getMonth());
+console.log(bday.getDate());
+console.log(bday.getDay());
+console.log(bday.getHours());
+console.log(bday.getMinutes());
+console.log(bday.getSeconds());
+console.log(bday.getMilliseconds());
+console.log(bday.getTime());
+bday.setFullYear(2008);
+console.log(bday)
+
+const today=new Date();
+if(today.getDate()=== 3 && today.getMonth()===9){
+    console.log('3 oct');
+}
+else{
+    console.log('not 3 oct')
+
+}

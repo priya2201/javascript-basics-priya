@@ -20,3 +20,18 @@ function myfun1(value,index,array){
 
 
 
+let msg=function(){
+    console.log('hi')
+}();
+
+let arr1=[10,20,30,40,50]
+let numb=arr1.map(funn)
+
+
+console.log(numb)
+
+
+function funn(value,index,array){
+return index;
+
+}

@@ -6,8 +6,8 @@ console.log(combine);
 const msg='hiee how are you buddy';
 const parts=msg.split(' ');
 const parts1=msg.split('  , ');
-const combine1=msg.join('-');
+// const combine1=msg.join('-');
 
 console.log(parts);
 console.log(parts1);
-console.log(combine1);
+// console.log(combine1);

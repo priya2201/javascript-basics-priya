@@ -3,8 +3,10 @@ let vegetables=['tomato','potato','onion'];
 let merged=[...fruits,...vegetables];
 vegetables.push('cucumber');
 let cc=[...fruits.concat(...vegetables)];
+let cc1=[...fruits,...vegetables];
 console.log(merged);
 console.log(cc);
+console.log(cc1);
 
 //coloredCircle object that has all properties of the circle object and an additional property color:radius:
 const circle={

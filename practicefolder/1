@@ -1,0 +1,54 @@
+function init(){
+    var a='mahima'
+    function displayname(){
+        console.log(a)
+    }
+displayname();
+}
+init();
+
+//destructuring
+let a,b,rest;
+[a,b]=[10,20];
+console.log(a);
+console.log(b);
+[a,b,...rest]=[10,20,30,40,50];
+console.log(rest);
+
+
+//left packing of destructuring array
+let x=[1,2,3,4,5];
+let[y,z]=x;
+console.log(y);
+console.log(z);
+
+//left pack of destructuring object
+let k={a:1,b:2}
+let{l,m}=k;
+console.log(k.a); // let l=k.a
+console.log(l) // undefined
+
+//higher oredr functions repeated
+const radius=[2,3,5,7];
+let calaculatearea=function(radius){
+    let output=[];
+    for(let i=0;i<radius.length;i++){
+    output.push(Math.PI * radius[i] * radius[i]) ;
+}
+return output;
+};
+console.log(calaculatearea(radius));
+
+//higher order  functions not repeated better code
+const radius1=[2,3,5,7];
+const area=function(radius){
+    return Math.PI* radius * radius
+}
+let calculate=function(radius,logic){
+    let output=[];
+    for(let i=0;i<radius.length;i++){
+    output.push(logic(radius[i]))
+}
+return output;
+}
+console.log(calculate(radius,area));

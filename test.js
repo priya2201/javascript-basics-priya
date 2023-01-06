@@ -13,12 +13,12 @@
 
 // console.log(template);
 
-//let x="piyu vinit";
- //console.log=x.substr(0,5);
+let x="piyu vinit";
+console.log=x.substr(0,5);
 // console.log=x.substr(0,5);
 // console.log=x.substr(0,5);
 // console.log=x.substr(0,5);
-// console.log(x.replace(/i/,"I"));
+//console.log(x.replace(/i/,"I"));
 
 // let n=min(4,5);
 // console.log(n);
@@ -45,10 +45,10 @@
 // }
 
 
-shownumbers(20);
-function shownumbers(limit){
-    for(let i=0;i<=20;i++){
-    const message=i%2===0?'EVEN':'ODD';
-    console.log(i,message);
-    }
-}
+// shownumbers(20);
+// function shownumbers(limit){
+//     for(let i=0;i<=20;i++){
+//     const message=i%2===0?'EVEN':'ODD';
+//     console.log(i,message);
+//     }
+// }

@@ -1,0 +1,51 @@
+const a=5
+let b=a
+b=6
+console.log(b);
+console.log(a);
+
+const c={
+    en:'hello',
+    de:'hallo',
+    es:'hola',
+    pt:'ola'
+}
+let d=c;
+d.pt='hm',
+console.log(d.pt);
+console.log(c.pt);
+
+let e={...c};
+e.pt='ha'
+console.log(e.pt);
+console.log(c.pt);
+
+let f=Object.assign({},c)
+f.pt='hoo'
+console.log(f.pt);
+console.log(c.pt);
+
+//what for nested
+const aa={
+fruit:{
+summerseason:'mango'
+}
+}
+let bb=aa;
+bb.fruit.summerseason='apple'
+console.log(bb.fruit.summerseason);
+console.log(aa.fruit.summerseason);
+
+let cc={
+    fruit:{...aa.fruit}
+}
+cc.fruit.summerseason='pineapple'
+console.log(cc.fruit.summerseason);
+console.log(aa.fruit.summerseason)
+let dd={
+    fruit:{...aa}
+}
+
+dd.fruit='winterseason'
+console.log(dd.fruit);
+console.log(aa.fruit);

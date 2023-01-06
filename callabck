@@ -1,0 +1,27 @@
+const FirstCallback=(err,data) =>{
+    if(err){
+
+
+     return "Failed";
+
+}
+else{
+    return "success number is :"+data
+}
+}
+
+//FirstCallback(null,12);
+
+
+function checkNumber(num,cb){
+    if(num<10){
+       return cb("smaller than 10")
+    }
+    else{
+       return  cb(null,num)
+    }
+}
+
+console.log(checkNumber(4,FirstCallback));
+
+

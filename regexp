@@ -26,5 +26,5 @@ for(var x=0;x<=5;x++){
    setTimeout(()=>{console.log(x)
 },2000);
 }
-const obj=/e/.exec("the best things in life are free");
+const obj=/f/.exec("the best things in life are free");
 console.log("found " + obj[0] + " in position " + obj.index + " in the text " + obj.input);

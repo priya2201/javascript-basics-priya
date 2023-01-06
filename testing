@@ -1,21 +1,34 @@
-//testing the positive and negative elemts in an arary with every and some
+// //testing the positive and negative elemts in an arary with every and some
 
-const arr1=[1,2,2,5,7];
+// const arr1 = [1, 2, 2, 5, 7];
 
-const allpositive=arr1.every(function(value){
-    return value>=0
-});
-console.log(allpositive);
+// const allpositive = arr1.every(function (value) {
+//     return value >= 0
+// });
+// console.log(allpositive);
 
-const arr2=[1,2,2,5,-1,7];
+// const arr2 = [1, 2, 2, 5, -1, 7];
 
-let atleastone= arr2.some(function(element){
-    return element>=0
-});
-let at1= arr2.every(function(element){
-    return element>=0
-});
+// let atleastone = arr2.some(function (element) {
+//     return element >= 0
+// });
+// let at1 = arr2.every(function (element) {
+//     return element >= 0
+// });
 
 
-console.log(atleastone);
-console.log(at1);
+// console.log(atleastone);
+// console.log(at1);
+
+const arr = [4, 56, 5, 3, 34, 37, 89, 57, 98];
+const sortWithReduce = arr => {
+    return arr.reduce((acc, val) => {
+        let ind = 0;
+        while (ind < arr.length && val < arr[ind]) {
+            ind++;
+        }
+        acc.splice(ind, 0, val);
+        return acc;
+    }, []);
+};
+console.log(sortWithReduce(arr));
