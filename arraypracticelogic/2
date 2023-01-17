@@ -1,0 +1,77 @@
+let is_array=(input)=>{
+    if(toString.call(input)=== '[object Array]')
+    return true;
+    return false;
+}
+console.log(is_array('hellooo'))
+console.log(is_array([11,22,334,44,55]));
+
+
+//clone array
+var clone_array=(input)=>input.slice(0);
+console.log(clone_array([1,2,3,4]));
+console.log(clone_array([1,2,[3,4,5,],6]))
+
+let x=[1,2,3,4,5];
+let y=[...x];
+console.log(x);
+console.log(y);
+console.log('----------------------------------------');
+let z=Array.from(x);
+console.log(z);
+console.log('----------------------------------------');
+let a= Array.prototype.slice(x);  //do instead slice below is the code
+console.log(a)
+let b=x.slice()
+console.log(b);
+console.log('----------------------------------------');
+let c=x.map(i=>i);
+console.log(c);
+console.log('----------------------------------------');
+let d=x.filter(()=>true)
+console.log(d);
+
+//print first element of an array
+var first =  function(array, n) {
+    if (array == null) 
+    return void 0;
+  if (n == null) 
+    return array[0];
+  if (n < 0)
+    return [];
+  return array.slice(0, n);
+};
+
+console.log(first([7, 9, 0, -2]));
+console.log(first([],3));
+console.log(first([7, 9, 0, -2],3));
+console.log(first([7, 9, 0, -2],6));
+console.log(first([7, 9, 0, -2],-3));
+
+
+//print last elemnt of an array
+var last=function(array,n){
+    if(array == null)
+    return void 0;
+if(n== null)
+return array[array.length-1];
+return array.slice(Math.max(array.length-n,0));
+
+};
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2],3));
+console.log(last([7, 9, 0, -2],6));
+console.log(last([7, 9, 0, -2],-3));
+console.log(last([7, 9, 0, -2],2));
+console.log(last([7, 9, 0, -2,6,12],1));
+console.log(last([7, 9, 0, -2,6,12],-1)); // doing  - and - which gives + so it does not have that 7 length so it return sempty array
+
+
+
+let arr1=[2,2,2,3,4,5,6,7,8];
+n=5
+let k=Math.max(4-6)
+console.log(k)
+let m=arr1.slice(Math.max(arr1.length-n,0))
+console.log(m);
+

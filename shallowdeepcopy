@@ -47,5 +47,7 @@ let dd={
 }
 
 dd.fruit='winterseason'
+dd.fruit.winterseason='strawberry'
 console.log(dd.fruit);
 console.log(aa.fruit);
+console.log(dd.fruit.winterseason); // undefined
