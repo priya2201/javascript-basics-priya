@@ -1,0 +1,47 @@
+const peon={
+    name:'ayesha',
+    city:'jaipur',
+    orgin:'india'
+}
+let txt='';
+for(let x in peon){
+txt+=peon[x]+ ' ';
+}
+console.log(peon);
+console.log(txt);
+let myarray=Object.values(peon);//convet a js object into an array
+console.log(myarray) 
+let mysring=JSON.stringify(peon)//convert a js object can be stringified converted to string and it converts a date into string
+console.log(mysring)
+const peon1={
+    name:'ayesha',
+    city:'jaipur',
+    orgin:'india',
+    today:new Date()
+}
+let str=JSON.stringify(peon1);
+console.log(str);
+
+//stringify functions will not stringify functions
+
+const person = {
+    name: "John",
+    age: function () {return 30;}
+  };
+let str1=JSON.stringify(person);
+  console.log(str1)
+
+  //this is poosible when you convert a functions into string before stringifying
+  const person1 = {
+    name: "John",
+    age: function () {return 30;}
+  };
+  person1.age=person1.age.toString();
+let str2=JSON.stringify(person1);
+  console.log(str2)
+
+  //posible to stringify js arrays
+  const arr = ["John", "Peter", "Sally", "Jane"];
+
+let myString = JSON.stringify(arr);
+console.log(myString);

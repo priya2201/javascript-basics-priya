@@ -1,0 +1,9 @@
+let mycolor=['red','green','yellow','blue'];
+let c=mycolor.toString();
+let a=mycolor.join();
+let b=mycolor.join(', ');
+let d=mycolor.join('+ ');
+console.log(c);
+console.log(a);
+console.log(b);
+console.log(d);
