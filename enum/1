@@ -1,0 +1,82 @@
+//frozen to enum which is immutable so we can not add key and the object's prototype cannot be reassigned
+const obj={
+    //immutable:mutable
+    south:"south",
+    north:"north",
+    west:"west",
+    east:"east"
+}
+
+const obj1=Object.freeze({
+    //immutable:mutable
+    south:"south",
+    north:"north",
+    west:"west",
+    east:"east"
+})
+let input=obj1.south
+if(input == obj1.south){
+    console.log('Move Up')
+}
+const obj2=Object.freeze({
+    //immutable:mutable
+    south:"south",
+    north:"north",
+    west:"west",
+    east:"east"
+})
+const pole=Object.freeze({
+    north:"north",
+    south:"south"
+})
+console.log(obj2.north === pole.north)
+
+const obj3=Object.freeze({
+    //immutable:mutable
+    south:Symbol("south"),
+    north:Symbol("north"),
+    west:Symbol("west"),
+    east:Symbol("east")
+})
+const pole1=Object.freeze({
+    north:Symbol("north"),
+    south:Symbol("south")
+})
+console.log(obj3.north === pole1.north)
+
+//enum usig classes
+//Enums can be implemented using Javascript classes, where each value will be the static instance of the class itself but with different values.
+
+class Direction {
+    // Create new instances of the same class as static attributes
+    static North = new Direction('north')
+    static East = new Direction('east')
+    static West = new Direction('west')
+    static South = new Direction('south')
+  
+    constructor(name) {
+      this.name = name
+    }
+  }
+
+  var north = Direction.North
+console.log(north instanceof Direction)
+
+class Direction1 {
+    // Create new instances of the same class as static attributes
+    static North = new Direction1('east')
+    static East = new Direction1('east')
+    static West = new Direction1('west')
+    static South = new Direction1('south')
+  
+    constructor(name) {
+      this.name = name
+    }
+  }
+
+  var north = Direction.North
+console.log(north instanceof Direction)
+
+  
+
+

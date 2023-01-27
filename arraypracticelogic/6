@@ -1,0 +1,13 @@
+let arr=new Array(10,20,30,40);
+console.log(arr)
+
+const arr1=['mango','banana','apple'];
+console.log(arr1[arr1.length-1])
+
+let flen=arr.length;
+let txt="<ul>"
+for(let i=0;i<flen;i++){
+txt+="<li>"+arr[i]+"</li>";
+}
+txt+="</ul>"
+console.log(txt);
