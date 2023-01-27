@@ -1,0 +1,50 @@
+async function simpleAsync() {
+  return "1"
+}
+
+console.log(simpleAsync())
+
+async function simpleAsync1() {
+    return "1"
+  }
+  
+  simpleAsync1().then((data) => {
+      console.log(data)
+  })
+
+
+  //how async works and not wait because main thread is synchronous
+// function promise(){
+//     const mypromise=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log('promise executed');
+//             resolve('sample data')
+//         }, 2000);
+//     })
+// }
+
+// function executepomise(){
+//     var data='hello';
+//     var getfun=promise();
+//     console.log(data);
+//     console.log(getfun)
+// }
+// executepomise();
+
+//working with await keyword
+function promise(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log('promise executed');
+            resolve('sample data')
+        }, 2000);
+    })
+}
+
+async function executepomise(){
+    var data='hello';
+    var getfun= await promise();
+    console.log(data);
+    console.log(getfun)
+}
+executepomise();

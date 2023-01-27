@@ -1,0 +1,17 @@
+function buildname(name){
+    const greeting="Hello,"+name;
+    console.log(greeting)
+}
+buildname('piyu');
+
+
+function buildMyName(name){
+    const greeting='hi'+" "+ name+" " + 'welcome';
+const namee=function(){
+    console.log(greeting)
+};
+return namee
+}
+
+const sayname=buildMyName('siyudi');
+sayname();
